@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="E:/Googleplay/HideCam/libs/org.eclipse.jetty.continuation_8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="E:/Googleplay/HideCam/libs/org.eclipse.jetty.http_8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="E:/Googleplay/HideCam/libs/org.eclipse.jetty.io_8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="E:/Googleplay/HideCam/libs/org.eclipse.jetty.server_8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="E:/Googleplay/HideCam/libs/org.eclipse.jetty.util_8.1.12.v20130726.jar"/>
+	<classpathentry kind="lib" path="E:/Googleplay/HideCam/libs/servlet-api-3.0.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

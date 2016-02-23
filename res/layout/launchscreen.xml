@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_background" >
+
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_camera"
+        android:contentDescription="@string/app_name" />
+    
+    <TextView
+        android:id="@+id/textstreamlive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/camera"
+        android:clickable="false"
+        android:layout_marginTop="5dp"
+        android:text="@string/live_content_streaming"
+        android:textColor="#fff"  >
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textstreamlive"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_transfer" 
+        android:contentDescription="@string/app_name"/>
+    
+    <TextView
+        android:id="@+id/textstreamcamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/stream"
+        android:clickable="false"
+        android:layout_marginTop="5dp"
+        android:text="@string/stream_from_caera_roll" 
+        android:textColor="#fff" >
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textstreamcamera"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_menu_settings" 
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/textsettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/settings"
+        android:clickable="false"
+        android:layout_marginTop="5dp"
+        android:text="@string/settings"
+        android:textColor="#fff" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/btnInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

@@ -1,0 +1,629 @@
+Manifest-Version: 1.0
+Bundle-DocURL: http://www.eclipse.org/jetty
+Implementation-Vendor: Eclipse.org - Jetty
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Built-By: jesse
+Bundle-SymbolicName: org.eclipse.jetty.server
+Bundle-Version: 8.1.12.v20130726
+Export-Package: org.eclipse.jetty.server;uses:="org.eclipse.jetty.io,o
+ rg.eclipse.jetty.util.log,org.eclipse.jetty.util.statistic,org.eclips
+ e.jetty.http,org.eclipse.jetty.util.thread,org.eclipse.jetty.util.com
+ ponent,org.eclipse.jetty.server.ssl,org.eclipse.jetty.server.nio,org.
+ eclipse.jetty.util.resource,org.eclipse.jetty.util,javax.servlet,org.
+ eclipse.jetty.continuation,org.eclipse.jetty.server.handler,javax.ser
+ vlet.http,org.eclipse.jetty.io.nio,org.eclipse.jetty.server.session,j
+ avax.security.auth";version="8.1.12",org.eclipse.jetty.server.nio;use
+ s:="org.eclipse.jetty.server,org.eclipse.jetty.io,org.eclipse.jetty.h
+ ttp,org.eclipse.jetty.util.log,org.eclipse.jetty.io.nio,org.eclipse.j
+ etty.util.thread,org.eclipse.jetty.util";version="8.1.12",org.eclipse
+ .jetty.server.handler;uses:="org.eclipse.jetty.server,org.eclipse.jet
+ ty.util.component,org.eclipse.jetty.util.log,org.eclipse.jetty.util,o
+ rg.eclipse.jetty.io.nio,org.eclipse.jetty.io,org.eclipse.jetty.util.t
+ hread,org.eclipse.jetty.http,javax.servlet,javax.servlet.http,org.ecl
+ ipse.jetty.util.resource,javax.servlet.descriptor,org.eclipse.jetty.h
+ ttp.gzip,org.eclipse.jetty.continuation,org.eclipse.jetty.util.statis
+ tic";version="8.1.12",org.eclipse.jetty.server.nio.jmx;version="8.1.1
+ 2",org.eclipse.jetty.server.session.jmx;uses:="org.eclipse.jetty.serv
+ er,org.eclipse.jetty.server.handler.jmx,org.eclipse.jetty.server.hand
+ ler,org.eclipse.jetty.server.session";version="8.1.12",org.eclipse.je
+ tty.server.jmx;uses:="org.eclipse.jetty.server,org.eclipse.jetty.serv
+ er.handler,org.eclipse.jetty.jmx";version="8.1.12",org.eclipse.jetty.
+ server.ssl;uses:="org.eclipse.jetty.server,org.eclipse.jetty.io,javax
+ .security.cert,javax.net.ssl,org.eclipse.jetty.util.log,org.eclipse.j
+ etty.util,org.eclipse.jetty.util.ssl,org.eclipse.jetty.io.nio,org.ecl
+ ipse.jetty.server.nio,org.eclipse.jetty.server.bio,org.eclipse.jetty.
+ io.bio";version="8.1.12",org.eclipse.jetty.server.handler.jmx;uses:="
+ org.eclipse.jetty.server,org.eclipse.jetty.server.handler,org.eclipse
+ .jetty.jmx,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.log
+ ,org.eclipse.jetty.util";version="8.1.12",org.eclipse.jetty.server.se
+ ssion;uses:="javax.servlet,org.eclipse.jetty.server,org.eclipse.jetty
+ .server.handler,org.eclipse.jetty.util.log,javax.servlet.http,org.ecl
+ ipse.jetty.util.component,org.eclipse.jetty.util.statistic,org.eclips
+ e.jetty.http,org.eclipse.jetty.util,javax.naming,javax.sql";version="
+ 8.1.12",org.eclipse.jetty.server.bio;uses:="org.eclipse.jetty.server,
+ org.eclipse.jetty.io.bio,org.eclipse.jetty.io,org.eclipse.jetty.http,
+ org.eclipse.jetty.util.thread,org.eclipse.jetty.util.log,org.eclipse.
+ jetty.util.component";version="8.1.12"
+url: http://www.eclipse.org/jetty
+Bundle-Description: The core jetty server artifact.
+Build-Jdk: 1.7.0_25
+Bundle-Classpath: .
+Bundle-Vendor: Eclipse Jetty Project
+Bnd-LastModified: 1374857889748
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0, http://www
+ .eclipse.org/org/documents/epl-v10.php
+Bundle-Name: Jetty :: Server Core
+Tool: Bnd-1.15.0
+Archiver-Version: Plexus Archiver
+Bundle-Copyright: Copyright (c) 2008-2012 Mort Bay Consulting Pty. Ltd
+ .
+Created-By: Apache Maven Bundle Plugin
+Implementation-Version: 8.1.12.v20130726
+Import-Package: javax.naming,javax.net.ssl,javax.security.auth,javax.s
+ ecurity.cert,javax.servlet;version="2.6.0",javax.servlet.descriptor;v
+ ersion="2.6.0",javax.servlet.http;version="2.6.0",javax.sql,org.eclip
+ se.jetty.continuation;version="[8.1,9)",org.eclipse.jetty.http;versio
+ n="[8.1,9)",org.eclipse.jetty.http.gzip;version="[8.1,9)",org.eclipse
+ .jetty.io;version="[8.1,9)",org.eclipse.jetty.io.bio;version="[8.1,9)
+ ",org.eclipse.jetty.io.nio;version="[8.1,9)",org.eclipse.jetty.jmx;re
+ solution:=optional;version="8.0",org.eclipse.jetty.util;version="[8.1
+ ,9)";resolution:=optional,org.eclipse.jetty.util.component;version="[
+ 8.1,9)";resolution:=optional,org.eclipse.jetty.util.log;version="[8.1
+ ,9)";resolution:=optional,org.eclipse.jetty.util.resource;version="[8
+ .1,9)";resolution:=optional,org.eclipse.jetty.util.ssl;version="[8.1,
+ 9)";resolution:=optional,org.eclipse.jetty.util.statistic;version="[8
+ .1,9)";resolution:=optional,org.eclipse.jetty.util.thread;version="[8
+ .1,9)";resolution:=optional
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/jetty/server/session/JDBCSessionManager$ClassLoading
+ ObjectInputStream.class
+SHA1-Digest: p39eEJ52hvA5aO4qlTOKJ9iwqoY=
+
+Name: org/eclipse/jetty/server/Request$MultiPartCleanerListener.class
+SHA1-Digest: 25ZV8y70QlcuXjltcAwH2ZXm8/4=
+
+Name: org/eclipse/jetty/server/handler/HandlerList.class
+SHA1-Digest: WSV3S50Pcjh7vBlAyxhXIg978OI=
+
+Name: org/eclipse/jetty/server/Authentication$ResponseSent.class
+SHA1-Digest: Bn3ta4InfyOgnR5y1TfYZbiMPwg=
+
+Name: org/eclipse/jetty/server/RequestLog.class
+SHA1-Digest: FWs3QvwfXvT51nDBhh5YPPgJLHE=
+
+Name: org/eclipse/jetty/server/UserIdentity$1.class
+SHA1-Digest: hs6lZuJKGxu4R6w+DRsgAdhkUxk=
+
+Name: org/eclipse/jetty/server/nio/AbstractNIOConnector.class
+SHA1-Digest: NB1nCanmCuAuiBUWg8k+6eNx+b8=
+
+Name: org/eclipse/jetty/server/jmx/Handler-mbean.properties
+SHA1-Digest: hHAj7sSIT0otepI5DPa6+9gevyM=
+
+Name: org/eclipse/jetty/server/session/AbstractSessionIdManager.class
+SHA1-Digest: r+pYATvy/GuafKgT743UJMsEOpE=
+
+Name: org/eclipse/jetty/server/Authentication.class
+SHA1-Digest: HmV/OLrcbm/UsJfsoplGnsciTQ0=
+
+Name: org/eclipse/jetty/server/Authentication$Wrapped.class
+SHA1-Digest: vaAOQVptadY8CLHyfC7jyYOBO/s=
+
+Name: org/eclipse/jetty/server/nio/InheritedChannelConnector.class
+SHA1-Digest: 2x1h+cq6SLdMnS8p8s5kOVIYqpw=
+
+Name: org/eclipse/jetty/server/Response$NullOutput.class
+SHA1-Digest: rtYvL0Bq/gOBTFbBxKQYmrzAngM=
+
+Name: org/eclipse/jetty/server/Connector.class
+SHA1-Digest: B819x7ngFGF2nq8n8ekusJaQrEM=
+
+Name: org/eclipse/jetty/server/session/HashSessionManager.class
+SHA1-Digest: LsdjnUEK9JFd1P8KHK8qQF4Kh+s=
+
+Name: org/eclipse/jetty/server/Response.class
+SHA1-Digest: IOYMb8o9iGdBhJNHfvHE0xiHXq4=
+
+Name: org/eclipse/jetty/server/session/jmx/AbstractSessionManagerMBean
+ .class
+SHA1-Digest: MMY/3457sWyAMGAmHSqTPFisaI4=
+
+Name: org/eclipse/jetty/server/AsyncContinuation.class
+SHA1-Digest: yk/RE0K5YEHT2ZQ79tIXv1evPqw=
+
+Name: org/eclipse/jetty/server/jmx/NCSARequestLog-mbean.properties
+SHA1-Digest: irpYktuqYZdaZhn0gFHnypmde8w=
+
+Name: org/eclipse/jetty/server/ssl/SslSocketConnector$SslConnectorEndP
+ oint$1.class
+SHA1-Digest: mVVDlBzVYU1ndHnMmzLZOMokqcc=
+
+Name: org/eclipse/jetty/server/Authentication$2.class
+SHA1-Digest: g2zsF545a347UY9XB2SC3b9eX2o=
+
+Name: org/eclipse/jetty/server/handler/ErrorHandler.class
+SHA1-Digest: HyRz0BgBkbCpPA/o9TIRBqE0ZmM=
+
+Name: org/eclipse/jetty/server/handler/ConnectHandler$ProxyToServerCon
+ nection.class
+SHA1-Digest: ptoJYbaYJ+aRrrH/TAA4/ym7Hnc=
+
+Name: org/eclipse/jetty/server/handler/RequestLogHandler$1.class
+SHA1-Digest: Z+SaAZog7xkeRKhRCeJThMHsHYY=
+
+Name: org/eclipse/jetty/server/AsyncNCSARequestLog$WriterThread.class
+SHA1-Digest: bnEmupLeY03ext5J3w8wtU++0ZY=
+
+Name: org/eclipse/jetty/server/handler/ContextHandler$ApproveSameSuffi
+ xAliases.class
+SHA1-Digest: FLqPGtLask1AbJILOP6U1Fof+eI=
+
+Name: org/eclipse/jetty/server/nio/NetworkTrafficSelectChannelConnecto
+ r.class
+SHA1-Digest: +9Fcpl/Crz8N/RrN1SEgW33Ck38=
+
+Name: org/eclipse/jetty/server/AsyncContinuation$1.class
+SHA1-Digest: 9twkBjnbasbgFsji1xEunGn+nu0=
+
+Name: org/eclipse/jetty/server/handler/RequestLogHandler$NullRequestLo
+ g.class
+SHA1-Digest: 7BxEN6JSDn08KvmP5hEKG2paXCM=
+
+Name: org/eclipse/jetty/server/ssl/SslSocketConnector.class
+SHA1-Digest: jHvhrt6iRSG3wjPO4h5jWaJwsZU=
+
+Name: org/eclipse/jetty/server/AsyncHttpConnection.class
+SHA1-Digest: Q2VD2xopxqASe0DEvstBYrPMQ1c=
+
+Name: org/eclipse/jetty/server/HttpInput.class
+SHA1-Digest: BA2gAs/uk3+0b67+postJPgjZV8=
+
+Name: org/eclipse/jetty/server/handler/StatisticsHandler.class
+SHA1-Digest: IuFPYeH4ZiJsOVr77R2MX/kOkxY=
+
+Name: org/eclipse/jetty/server/Server$Graceful.class
+SHA1-Digest: GpjIh9WE7XSkFYgLdPG6sWMVixM=
+
+Name: org/eclipse/jetty/server/handler/ConnectHandler$ProxyToServerCon
+ nection$1.class
+SHA1-Digest: OGsuy4FvmJhbdIzntMiX/I4mhSU=
+
+Name: org/eclipse/jetty/server/nio/BlockingChannelConnector$BlockingCh
+ annelEndPoint.class
+SHA1-Digest: f5VnyjLpgy0fNQjuvoZRivOkvfk=
+
+Name: org/eclipse/jetty/server/handler/jmx/StatisticsHandler-mbean.pro
+ perties
+SHA1-Digest: 8q3ge1QoOt5IkP0TaIdzfnFw1v0=
+
+Name: org/eclipse/jetty/server/session/AbstractSessionManager$2.class
+SHA1-Digest: teNImGWVMZICXgVqOqBTFbJGIEU=
+
+Name: org/eclipse/jetty/server/bio/SocketConnector$ConnectorEndPoint.c
+ lass
+SHA1-Digest: SiaG3GJhJ9MN44sBmJdImcbNdMc=
+
+Name: org/eclipse/jetty/server/LocalConnector.class
+SHA1-Digest: uPFgwMxjhSQoSIRj8kC/NjcYusM=
+
+Name: org/eclipse/jetty/server/ServletResponseHttpWrapper.class
+SHA1-Digest: RyzBaV8OOBvRAT5/Ew0f0l+r2tQ=
+
+Name: org/eclipse/jetty/server/handler/ConnectHandler.class
+SHA1-Digest: /0xLMr+6eCutmizkUKzzncoml88=
+
+Name: org/eclipse/jetty/server/handler/MovedContextHandler$1.class
+SHA1-Digest: 5kxS+XuCV1YWE9WPpRVwrOL1w8k=
+
+Name: org/eclipse/jetty/server/handler/ContextHandler$Context.class
+SHA1-Digest: SX2mZlTidX9dHJR2uMt8v5JQf6c=
+
+Name: org/eclipse/jetty/server/session/SessionHandler.class
+SHA1-Digest: C0pCV+pXTqRFa2wwvgH2nLNYamY=
+
+Name: org/eclipse/jetty/server/handler/DefaultHandler.class
+SHA1-Digest: 7okhzqKULup+2Y9DX32aRIiApjI=
+
+Name: org/eclipse/jetty/server/handler/jmx/HandlerWrapper-mbean.proper
+ ties
+SHA1-Digest: fP3QsargZbNNwoLQ5JyRVz7zZU0=
+
+Name: org/eclipse/jetty/server/jmx/ServerMBean.class
+SHA1-Digest: mvCE7HkVkZmeZoodZpAH+woWMHo=
+
+Name: org/eclipse/jetty/server/handler/AbstractHandler.class
+SHA1-Digest: a3lKJiZxWc8zeGvgkNNCiryFq4Q=
+
+Name: org/eclipse/jetty/server/handler/HandlerCollection.class
+SHA1-Digest: GEUvcq5AlKoGexjqRpMRwj2fE0A=
+
+Name: org/eclipse/jetty/server/nio/NIOConnector.class
+SHA1-Digest: C60TKfq/rTacboxI2ZM/Dc3o8Dw=
+
+Name: org/eclipse/jetty/server/UserIdentity$Scope.class
+SHA1-Digest: UExylK2S7S8h1S4JYKEaxvK7mqs=
+
+Name: org/eclipse/jetty/server/LocalConnector$Request$1.class
+SHA1-Digest: 8o7Z4V/l+0Hzc6EGqR83/iHlT/E=
+
+Name: org/eclipse/jetty/server/Handler.class
+SHA1-Digest: Saepd7ZR+6E+9LNsAspVZkPusPg=
+
+Name: org/eclipse/jetty/server/session/JDBCSessionIdManager$1.class
+SHA1-Digest: Md3UJzue/UNqpbqfHA8AiZ0QtMg=
+
+Name: org/eclipse/jetty/server/Authentication$Failure.class
+SHA1-Digest: VfKjyCVGIaescmSyCDnrAZwyiuw=
+
+Name: org/eclipse/jetty/server/handler/jmx/ContextHandlerCollection-mb
+ ean.properties
+SHA1-Digest: zPEVD3l5kCieceCNb7wbbvapunc=
+
+Name: org/eclipse/jetty/server/AbstractHttpConnection$OutputWriter.cla
+ ss
+SHA1-Digest: YEhY1D7e++jYbJBqXsgdGzCXySw=
+
+Name: org/eclipse/jetty/server/handler/HandlerCollection$1.class
+SHA1-Digest: bNj4+Z+Y5eJiuR6QxZ1csxgImZY=
+
+Name: org/eclipse/jetty/server/handler/RequestLogHandler.class
+SHA1-Digest: jIW1O7VqYrgJgToGu00YhGT4uK0=
+
+Name: org/eclipse/jetty/server/Dispatcher$IncludeAttributes.class
+SHA1-Digest: u0ECHM+R9SxCbP7ffRw5fEJQcCo=
+
+Name: org/eclipse/jetty/server/bio/SocketConnector.class
+SHA1-Digest: y1iH1MWxUpiYHEbu4pT4wkL5ymk=
+
+Name: org/eclipse/jetty/server/ssl/SslConnector.class
+SHA1-Digest: jigN6veipy5MuRzbWDbetlhMggI=
+
+Name: org/eclipse/jetty/server/AsyncNCSARequestLog.class
+SHA1-Digest: qdIWrTDCITJZRlpu5p1FRt5jDyg=
+
+Name: org/eclipse/jetty/server/handler/ScopedHandler.class
+SHA1-Digest: yqupoCEYpNkHjmiU3u6SxRbEyPM=
+
+Name: org/eclipse/jetty/server/jmx/HandlerContainer-mbean.properties
+SHA1-Digest: zAc5sdEwJJjIJr+cjxb44lVp7rs=
+
+Name: org/eclipse/jetty/server/Authentication$3.class
+SHA1-Digest: rBCRgnGDXOAk7EY4VGPhcpjS24I=
+
+Name: org/eclipse/jetty/server/handler/ConnectHandler$ClientToProxyCon
+ nection.class
+SHA1-Digest: qyiPM86g9Mz7yCTw7rkafvlpCnI=
+
+Name: org/eclipse/jetty/server/InclusiveByteRange.class
+SHA1-Digest: jT5/C+NMSNHi3tRK3CYqgpY2M9k=
+
+Name: org/eclipse/jetty/server/session/HashSessionManager$1.class
+SHA1-Digest: 8+GrkBdXPqRdZFxUKExr3VJSuFo=
+
+Name: org/eclipse/jetty/server/session/JDBCSessionManager.class
+SHA1-Digest: EVjQyeEG0uZ1dYXD0GTM5EdRhrw=
+
+Name: org/eclipse/jetty/server/handler/ContextHandler$AliasCheck.class
+SHA1-Digest: F4zq+dBRlvOoEH/cuOIOKDW6jow=
+
+Name: org/eclipse/jetty/server/nio/SelectChannelConnector$1.class
+SHA1-Digest: SWCs9uwz4/OAHIOxcqlLr7pzWI8=
+
+Name: org/eclipse/jetty/server/handler/ContextHandler$ApprovePathPrefi
+ xAliases.class
+SHA1-Digest: d37d18D9ZViCczp9JkGaWZqU9ms=
+
+Name: org/eclipse/jetty/server/handler/HandlerWrapper.class
+SHA1-Digest: JVOGYXtc8hIIZZ5SV6GG9cm0Rh8=
+
+Name: org/eclipse/jetty/server/handler/ConnectHandler$Manager.class
+SHA1-Digest: RGUnZlVUbLSqA4BxHQIEaJctCeo=
+
+Name: org/eclipse/jetty/server/Authentication$SendSuccess.class
+SHA1-Digest: VTkGvwPAH+leI9zwJmCl5Nag2NI=
+
+Name: org/eclipse/jetty/server/handler/HotSwapHandler.class
+SHA1-Digest: pMOh8akRnyJUW9hW6GUgSvC/pns=
+
+Name: org/eclipse/jetty/server/ResourceCache$1.class
+SHA1-Digest: /6VUO1mjwmwNQ7H8qk9CPZLyLIo=
+
+Name: org/eclipse/jetty/server/handler/GzipHandler$2$1.class
+SHA1-Digest: T4N//DMPeUPyaZ/puMTKxealgcA=
+
+Name: org/eclipse/jetty/server/Authentication$Challenge.class
+SHA1-Digest: vPJrW8NWTFq5mdP8w0eRPLPuGF0=
+
+Name: org/eclipse/jetty/server/session/JDBCSessionManager$1.class
+SHA1-Digest: B7xH0xoU+uaxV8wy6i/3IUdy6nA=
+
+Name: about.html
+SHA1-Digest: qGUJtgzJK5Q8G3Vp9dx2HuXI9W4=
+
+Name: org/eclipse/jetty/server/jmx/Server-mbean.properties
+SHA1-Digest: lm3yr70qOt4FReNU3MIzpF0zqhU=
+
+Name: org/eclipse/jetty/server/HttpWriter.class
+SHA1-Digest: YIZ0wZ5EUI56sN1qGV2t2WJI0bw=
+
+Name: org/eclipse/jetty/server/BlockingHttpConnection.class
+SHA1-Digest: Gx1kxVg86RW9WNsY0Rba5xcPi4g=
+
+Name: org/eclipse/jetty/server/handler/jmx/HandlerCollection-mbean.pro
+ perties
+SHA1-Digest: PHb0GxlQcQcWTfpPmB1BUCEW4v4=
+
+Name: org/eclipse/jetty/server/Dispatcher$ForwardAttributes.class
+SHA1-Digest: 7gmIZ6zH81hHY/d/TLNx9hijpBw=
+
+Name: org/eclipse/jetty/server/handler/StatisticsHandler$1.class
+SHA1-Digest: w6f87QMRbJcBgynQ44bRNliPjNg=
+
+Name: org/eclipse/jetty/server/session/HashedSession.class
+SHA1-Digest: iernB4T2ToheLgGbJvvFQ+v8uRw=
+
+Name: org/eclipse/jetty/server/ShutdownMonitor$1.class
+SHA1-Digest: k28TfDN3WFaTY0Kba51bW4X6/qE=
+
+Name: org/eclipse/jetty/server/handler/ProxyHandler.class
+SHA1-Digest: qSeZUb2S+1rv/9Jv8d/411tu+Q0=
+
+Name: org/eclipse/jetty/server/session/HashSessionManager$ClassLoading
+ ObjectInputStream.class
+SHA1-Digest: cV7gn46f6meRlgTZdgC6GZvwjuY=
+
+Name: org/eclipse/jetty/server/session/AbstractSessionManager$SessionI
+ f.class
+SHA1-Digest: +4KdmQ/3hdoajC/y1QnbSaRKfY4=
+
+Name: org/eclipse/jetty/server/CookieCutter.class
+SHA1-Digest: 1hHACBGPvvdvfaJ+xP09Vu7092o=
+
+Name: org/eclipse/jetty/server/session/HashSessionIdManager.class
+SHA1-Digest: tmQAZUNeTb+kERk9VO/1iXdOXTc=
+
+Name: org/eclipse/jetty/server/HttpOutput.class
+SHA1-Digest: TD4dOWYlFYaI1Jo9d3ggwwhMqcU=
+
+Name: org/eclipse/jetty/server/UserIdentity.class
+SHA1-Digest: guSwKgOn5Xepa10ejkev5AB8Cvg=
+
+Name: org/eclipse/jetty/server/ssl/ServletSSL.class
+SHA1-Digest: IdaPI6jT33Tdhb5SpTpUWvZ80B0=
+
+Name: org/eclipse/jetty/server/session/jmx/AbstractSessionManager-mbea
+ n.properties
+SHA1-Digest: k/cY9hJsC21VXVdYCBgRptP6NgQ=
+
+Name: org/eclipse/jetty/server/ssl/SslCertificates$CachedInfo.class
+SHA1-Digest: WgP33KGF55C3G1FXghKDrHnP5ww=
+
+Name: org/eclipse/jetty/server/LocalConnector$1.class
+SHA1-Digest: 1PfOBHef/lZhCu1rrQmZrmEXMpY=
+
+Name: org/eclipse/jetty/server/session/JDBCSessionIdManager.class
+SHA1-Digest: DgPupyudKlGpm8fF3VmnUoj44Ic=
+
+Name: org/eclipse/jetty/server/SessionManager.class
+SHA1-Digest: 7mS0S7c5siBZYCQxf5WLNHi4YWY=
+
+Name: org/eclipse/jetty/server/ssl/SslSocketConnector$SslConnectorEndP
+ oint.class
+SHA1-Digest: xpG6ntdGZSNsaD2uY5rymy/oKKE=
+
+Name: org/eclipse/jetty/server/ResourceCache$Content.class
+SHA1-Digest: 9y1tmw++/xqWHrbIPvCwR8upIF4=
+
+Name: org/eclipse/jetty/server/handler/MovedContextHandler$Redirector.
+ class
+SHA1-Digest: VJU3PvK5pEJTafsnWqVA5DwdYJk=
+
+Name: org/eclipse/jetty/server/nio/BlockingChannelConnector.class
+SHA1-Digest: KRzsQxjAu6n1/U1ZNwoHS3kk114=
+
+Name: org/eclipse/jetty/server/handler/GzipHandler.class
+SHA1-Digest: WS4jK4Qa1lDun2q4s7UPMnDEOOY=
+
+Name: org/eclipse/jetty/server/AbstractConnector.class
+SHA1-Digest: df/Ur1fSWVyegoXDmYnUvtvYKrk=
+
+Name: org/eclipse/jetty/server/handler/ShutdownHandler.class
+SHA1-Digest: CI1nbh8mvUYFnxvKEbQJ4iKhzaI=
+
+Name: org/eclipse/jetty/server/handler/ContextHandler.class
+SHA1-Digest: WMAfK2njbmWTm5VPZo96+P6NPTo=
+
+Name: org/eclipse/jetty/server/Server.class
+SHA1-Digest: t5o+8P4OXcaAkXzC+QAj2hJAItg=
+
+Name: org/eclipse/jetty/server/ResourceCache.class
+SHA1-Digest: n667H5mEGRLcD3W/L1j+AxE/WAc=
+
+Name: org/eclipse/jetty/server/NCSARequestLog$1.class
+SHA1-Digest: Kl7e8zhQKP9JcPCErq3QWBrTB1o=
+
+Name: org/eclipse/jetty/server/handler/GzipHandler$1.class
+SHA1-Digest: fa/rx2gnTWqcsumBDq1h9OtSwa0=
+
+Name: org/eclipse/jetty/server/Authentication$4.class
+SHA1-Digest: D7PbIj4mfRtXqkA9DrOVZjPFdi0=
+
+Name: org/eclipse/jetty/server/handler/ShutdownHandler$1.class
+SHA1-Digest: OK8qdbMLt1vb9uGa5GN6/C5wdYY=
+
+Name: org/eclipse/jetty/server/session/HashSessionManager$2.class
+SHA1-Digest: YYVqL4E+/DzNImH6vx2R1x9jGLw=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: org/eclipse/jetty/server/session/AbstractSessionManager.class
+SHA1-Digest: rowUKoZFqB/OqEtmD5ahvXvxQrI=
+
+Name: org/eclipse/jetty/server/ShutdownMonitor.class
+SHA1-Digest: AwqUyY30PTgzyQhhY/NnnQPMjAY=
+
+Name: org/eclipse/jetty/server/nio/SelectChannelConnector$ConnectorSel
+ ectorManager.class
+SHA1-Digest: atMtxMTAT8+ecOKPWNo3hSvDX+g=
+
+Name: org/eclipse/jetty/server/ssl/SslCertificates.class
+SHA1-Digest: BzqsKNoRXiWDwLj7huFqDikuRD4=
+
+Name: org/eclipse/jetty/server/AbstractHttpConnection$1.class
+SHA1-Digest: 9vBcWpbVcAGE2pM1mOgEpAWc4gc=
+
+Name: org/eclipse/jetty/server/AsyncContinuation$AsyncTimeout.class
+SHA1-Digest: dL5msaI+hByk5c1utjsdqwOBOsM=
+
+Name: org/eclipse/jetty/server/jmx/AbstractConnector-mbean.properties
+SHA1-Digest: ibUvnkfqnaHg6oE+PDTYKkDHwLw=
+
+Name: org/eclipse/jetty/server/HandlerContainer.class
+SHA1-Digest: b4/RprPo9D7traL1PvgkNJ5hNPo=
+
+Name: org/eclipse/jetty/server/handler/MovedContextHandler.class
+SHA1-Digest: QyInO1Uzhm+meZcBeQbkHyiF5YA=
+
+Name: org/eclipse/jetty/server/SessionIdManager.class
+SHA1-Digest: zrPLM0iqqyP0nbiu4jXyN/aQjGM=
+
+Name: org/eclipse/jetty/server/handler/DebugHandler.class
+SHA1-Digest: vns7sYPjMfq5vRVtXsrxD4zvfNM=
+
+Name: org/eclipse/jetty/server/session/JDBCSessionManager$Session.clas
+ s
+SHA1-Digest: CW4tEoGcihEb/RwNVWpj/ZK5Wpk=
+
+Name: org/eclipse/jetty/server/ShutdownMonitor$ShutdownMonitorThread.c
+ lass
+SHA1-Digest: uSJM1maYObwk4ysIfaFkkf27Zk4=
+
+Name: META-INF/maven/org.eclipse.jetty/jetty-server/pom.properties
+SHA1-Digest: HAT1e41xgYvrVubWhPefXSVuKcM=
+
+Name: META-INF/maven/org.eclipse.jetty/jetty-server/pom.xml
+SHA1-Digest: vZ4FEpdV3AZ7VpA6c1QunQlesR8=
+
+Name: org/eclipse/jetty/server/handler/IPAccessHandler.class
+SHA1-Digest: QFhdSZuFcwLY4wMkoEmRhFOMwaU=
+
+Name: org/eclipse/jetty/server/LocalConnector$Request.class
+SHA1-Digest: 9gO7UaV3tuWLgBoHYJIAxPDYF18=
+
+Name: org/eclipse/jetty/server/AbstractHttpConnection$Output.class
+SHA1-Digest: ankoGQL5CatI+35U4KmP3/R95NM=
+
+Name: org/eclipse/jetty/server/ServletRequestHttpWrapper.class
+SHA1-Digest: Bs1h/GUAhrvDlClxRkmt18RTF9I=
+
+Name: org/eclipse/jetty/server/handler/ConnectHandler$1.class
+SHA1-Digest: fWuPRn14ck8DwLtNxIzy4fK0exE=
+
+Name: org/eclipse/jetty/server/AsyncContinuation$AsyncEventState.class
+SHA1-Digest: 36e/62tVC15SpdpFScsbPctCRYg=
+
+Name: org/eclipse/jetty/server/handler/jmx/AbstractHandlerMBean.class
+SHA1-Digest: alhjIfmqLSUAMUWhFwfixwGnA5E=
+
+Name: org/eclipse/jetty/server/session/JDBCSessionIdManager$DatabaseAd
+ aptor.class
+SHA1-Digest: LRy9j2/ejcaKWQjNOn6YF06APQc=
+
+Name: org/eclipse/jetty/server/NCSARequestLog.class
+SHA1-Digest: qUaxmDre0c34k/v1UVjIMjg9KZs=
+
+Name: org/eclipse/jetty/server/handler/jmx/ContextHandler-mbean.proper
+ ties
+SHA1-Digest: FXyNsWNSHNlmn16xuH5a6BzQC80=
+
+Name: org/eclipse/jetty/server/handler/AbstractHandlerContainer.class
+SHA1-Digest: oFFpJy22NXzmvE2VNJuo+FExu+0=
+
+Name: org/eclipse/jetty/server/handler/ContextHandlerCollection.class
+SHA1-Digest: rZNF8x8HgEDNW9LvD0ibwpMueEg=
+
+Name: org/eclipse/jetty/server/ssl/SslSelectChannelConnector.class
+SHA1-Digest: fsatw3mPsomz9G6xL3cS/dA5nWY=
+
+Name: org/eclipse/jetty/server/Request.class
+SHA1-Digest: DMmoaSkwN9gS8K6vokW0O1eBsLc=
+
+Name: org/eclipse/jetty/server/nio/SelectChannelConnector.class
+SHA1-Digest: MAQoFod/JOVVVuf/QqEXuTzD7AQ=
+
+Name: org/eclipse/jetty/server/AbstractConnector$Acceptor.class
+SHA1-Digest: ScALdtPY22dUq1kgl25WhZ9zL18=
+
+Name: org/eclipse/jetty/favicon.ico
+SHA1-Digest: cRUhA6ENfShwQf9zSllBtY4JlYE=
+
+Name: org/eclipse/jetty/server/Authentication$1.class
+SHA1-Digest: skZQiWAg7qeIgUIh5BvPlrQJCnY=
+
+Name: org/eclipse/jetty/server/Authentication$User.class
+SHA1-Digest: nHoKQp8H7fIVTctmF3G5oGwLhpg=
+
+Name: org/eclipse/jetty/server/nio/BlockingChannelConnector$1.class
+SHA1-Digest: qHNxVRtesSY5am64bP/oGbF2RrU=
+
+Name: org/eclipse/jetty/server/handler/ResourceHandler.class
+SHA1-Digest: ezOrwnKzXHXO5HaVum2qQh9rEk0=
+
+Name: org/eclipse/jetty/server/AbstractHttpConnection.class
+SHA1-Digest: 6ZtIezWKgXVTwF+02+Tz5/Xyxb4=
+
+Name: org/eclipse/jetty/server/handler/GzipHandler$2.class
+SHA1-Digest: cMfEH0f4GGKffD/UxSSMWHsInlo=
+
+Name: org/eclipse/jetty/server/Authentication$5.class
+SHA1-Digest: Ixt1TVfAqOdtdhIuM4EA7Pj2oSk=
+
+Name: org/eclipse/jetty/server/session/AbstractSession.class
+SHA1-Digest: rzmfhEFbF0GbCA2v64MIEpDF+4Q=
+
+Name: org/eclipse/jetty/server/ShutdownMonitor$Holder.class
+SHA1-Digest: NJDfuANbUgre7G+X8YW70V4HNVk=
+
+Name: org/eclipse/jetty/server/Request$1.class
+SHA1-Digest: 8TULUqueBAO+V4avzkQ8G26mK7M=
+
+Name: org/eclipse/jetty/server/handler/ContextHandler$CLDump.class
+SHA1-Digest: C9xB4z+fYzkSFTA/Su+4ih27FpE=
+
+Name: org/eclipse/jetty/server/handler/jmx/ContextHandlerMBean.class
+SHA1-Digest: JiEjpSj0WVbwcDPjd0/wz7a7FMk=
+
+Name: org/eclipse/jetty/server/jmx/Connector-mbean.properties
+SHA1-Digest: 3da4NinwMg9jL/a8Tvk7qn7RhQY=
+
+Name: org/eclipse/jetty/server/handler/ContextHandler$ApproveNonExiste
+ ntDirectoryAliases.class
+SHA1-Digest: guZBwiFrfJLMF5OBMwba1hkB+pk=
+
+Name: org/eclipse/jetty/server/Authentication$Deferred.class
+SHA1-Digest: exDTjSwubueCHjqYE8CxfzDWDGc=
+
+Name: org/eclipse/jetty/server/nio/jmx/SelectChannelConnector-mbean.pr
+ operties
+SHA1-Digest: z4eCXcTyMPysIwqwQNs08e/+Sho=
+
+Name: org/eclipse/jetty/server/handler/jmx/AbstractHandler-mbean.prope
+ rties
+SHA1-Digest: zRSlKPQ+CgU9mCBF6hQ5vxV+tXw=
+
+Name: org/eclipse/jetty/server/session/AbstractSessionManager$1.class
+SHA1-Digest: dbXQ/KLAYQd0u2FmB2ppB53b+dE=
+
+Name: org/eclipse/jetty/server/UserIdentity$UnauthenticatedUserIdentit
+ y.class
+SHA1-Digest: N9qrp3ev9hEMzFwa81XyWTi5oSo=
+
+Name: org/eclipse/jetty/server/Dispatcher.class
+SHA1-Digest: XI+bNIPlRpNthlBtSPK12Piq2+c=
+
+Name: org/eclipse/jetty/server/AbstractHttpConnection$RequestHandler.c
+ lass
+SHA1-Digest: 7XYifiovACZwXnYN3sZz9nbEyF4=
+

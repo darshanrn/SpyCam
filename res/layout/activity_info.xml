@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eceac1"
+    tools:context=".InfoActivity" 
+    android:orientation="vertical"
+    >
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connectivity"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="306dp"
+         android:layout_height="wrap_content"
+         android:lines="18"
+         android:text="@string/connectivity_summary"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#000000"
+         android:layout_gravity="center_horizontal" />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+     
+	     <Button
+	         android:id="@+id/btnClose"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:textColor="#000000"
+	         android:layout_gravity="center_horizontal"
+	         android:text="@string/close" />
+	</LinearLayout>
+</LinearLayout>
+
+    

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/black_background"
+    tools:context=".StreamActivity" >
+
+        <TextView
+	        android:id="@+id/accessUrlText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="@string/localhost"
+	        android:textStyle="italic" 
+	        android:layout_gravity="center"
+	        android:layout_marginTop="20dp"
+	        android:textColor="#18ce0d"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        />
+        
+     <Button 
+            android:id="@+id/btnStartTransmitting"
+	        android:layout_width="200dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/start_transmitting"
+	        android:layout_marginTop="30dp"    
+            android:background="@drawable/custombutton" />   
+    
+    
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="140dp"
+        android:horizontalSpacing="20dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="10dp" 
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
