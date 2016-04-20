@@ -2,7 +2,7 @@
 <resources>
 
     <string name="localhost">127.0.0.1</string>
-    <string name="app_name">Spy Cam</string>
+    <string name="app_name">Hide Cam</string>
     <string name="title_activity_stream">StreamActivity</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
@@ -16,7 +16,7 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 	<string name="connectivity">Connectivity</string>
 	<string name="connectivity_summary">\n1. Connect your mobile device and computer to the same Wi-Fi router\n\n
-	    2. Launch \'Spy Cam\' application on your mobile\n\n
+	    2. Launch \'Hide Cam\' application on your mobile\n\n
 	    3. Chose to either Live capture photos or stream existing photos to computer\n\n
 	    4. Open a web browser on your computer and type in the address which is displayed on your mobile\n\n
 	    5. Keep refreshing the browser often to get latest images from mobile OR install a plugin to auto-refresh</string>
