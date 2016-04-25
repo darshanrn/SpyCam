@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="googleplay.hidecam"
+    package="googleplay.hiddencam"
     android:versionCode="3"
     android:versionName="3.0" >
 
@@ -24,7 +24,7 @@
         android:label="@string/app_name" >
 "
         <activity
-            android:name="googleplay.hidecam.LaunchScreenActivity"
+            android:name="googleplay.hiddencam.LaunchScreenActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
@@ -35,16 +35,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="googleplay.hidecam.LiveCaptureActivity"
+            android:name="googleplay.hiddencam.LiveCaptureActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
         <activity
-            android:name="googleplay.hidecam.SettingsActivity"
+            android:name="googleplay.hiddencam.SettingsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="googleplay.hidecam.StreamActivity"
+            android:name="googleplay.hiddencam.StreamActivity"
             android:label="@string/title_activity_stream"
-            android:parentActivityName="googleplay.hidecam.LaunchScreenActivity"
+            android:parentActivityName="googleplay.hiddencam.LaunchScreenActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
             <meta-data
@@ -52,10 +52,10 @@
                 android:value="googleplay.hidecam.LaunchScreenActivity" />
         </activity>
 
-        <service android:name="googleplay.hidecam.CameraService" />
+        <service android:name="googleplay.hiddencam.CameraService" />
 
         <activity
-            android:name="googleplay.hidecam.InfoActivity"
+            android:name="googleplay.hiddencam.InfoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_info"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
